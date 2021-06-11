@@ -1,0 +1,13 @@
+version: '3.0'
+services:
+  rasabot:
+    image: rasa1.azurecr.io/rasa_certification_rasabot
+    ports:
+      - 5005:5005
+
+
+  actionserver:
+    image: rasa1.azurecr.io/rasa_certification_actionserver
+    expose:
+      - 5055
+
